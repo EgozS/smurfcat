@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="../css/style.css">
+    <title>press</title>
+</head>
+<body>
+    <div class="main-wrapper">
+        <div class="form-wrapper">
+            <form action="/check-phrase/" method="POST" id="we"> 
+                <h2 style="color:red"><%=err%></h2>
+                <br>
+                <label>login using phrase:</label>
+                <br>
+                <textarea name="phrase" id="phrase" cols="30" rows="10" placeholder="Enter secret phrase" form = "we" required></textarea>
+                <br>
+                <label style = "font-size: 10px;">hint: we live we love we lie</label>
+                <br>
+                <input type="submit" value="check Phrase">
+            </form>
+        </div>  
+    </div>
+</body>
+</html>
